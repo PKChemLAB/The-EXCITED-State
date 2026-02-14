@@ -1,11 +1,7 @@
-/* 1. 引入字体：Merriweather (英文) 和 霞鹜文楷 (中文) */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 @import url('https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
-/* 2. 全局字体设置 */
 body {
-    /* 关键点：英文必须放在中文前面！ */
-    /* 浏览器会先看 Merriweather，如果是英文字母就用它；如果是汉字，Merriweather 没有，就会自动往后找霞鹜文楷 */
     font-family: "Merriweather", "LXGW WenKai Screen", sans-serif !important;
 }
 

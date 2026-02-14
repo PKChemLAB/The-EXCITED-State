@@ -4,39 +4,55 @@ title = "The EXCITED State"
 theme = "PaperMod"
 
 [outputs]
-    # 开启搜索功能必须的配置 (生成 search.json)
     home = ["HTML", "RSS", "JSON"]
 
+# --- 关键修复：允许在 Markdown 中使用 HTML (让友链生效) ---
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
 [params]
-    # --- 基础外观设置 ---
-    defaultTheme = "auto"       # 跟随系统深色模式
-    ShowReadingTime = true      # 显示阅读时间
-    ShowShareButtons = true     # 显示分享按钮
-    ShowWordCount = true        # 显示文章字数 (新增)
-    ShowCodeCopyButtons = true  # 代码块显示复制按钮 (写代码笔记必备)
-    ShowBreadCrumbs = true      # 显示面包屑导航
-    ShowToc = true              # 文章显示目录 (Table of Contents)
+    # --- 基础外观 ---
+    defaultTheme = "auto"
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowWordCount = true
+    ShowCodeCopyButtons = true
+    ShowBreadCrumbs = true
+    ShowToc = true
     
-    # --- 首页个人简介模式 (Profile Mode) ---
+    # --- 个人简介模式 ---
     [params.profileMode]
         enabled = true
         title = "The EXCITED State"
         subtitle = "😜 Hi there! Welcome to my blog!"
-        imageUrl = "https://github.com/PKChemLAB.png" 
+        imageUrl = "https://github.com/PKChemLAB.png"
         imageWidth = 120
         imageHeight = 120
+    
+        # 简介下方的按钮
+        [[params.profileMode.buttons]]
+            name = "📚 Posts"
+            url = "/posts"
+        [[params.profileMode.buttons]]
+            name = "🐙 GitHub"
+            url = "https://github.com/PKChemLAB"
 
-# --- 社交图标 (必须这样写，PaperMod 才能识别) ---
-        [[params.socialIcons]]
+    # --- 社交图标 ---
+    [[params.socialIcons]]
         name = "github"
         url = "https://github.com/PKChemLAB"
     
-        [[params.socialIcons]]
+    [[params.socialIcons]]
         name = "email"
         url = "mailto:1265689026@qq.com"
 
+    # --- Favicon (如果以后有了图标可以取消注释) ---
+    # [params.assets]
+    #     favicon = "favicon.png"
+
 [menu]
-    # --- 顶部导航栏 ---
     [[menu.main]]
         name = "Homepage"
         url = "/"
@@ -63,6 +79,11 @@ theme = "PaperMod"
         weight = 5
 
     [[menu.main]]
-    name = "Notebook"  # 加个emoji更生动
-    url = "https://pkchemlab.github.io/Notes/"
-    weight = 6
+        name = "Notebook"
+        url = "https://pkchemlab.github.io/Notes/" 
+        weight = 6
+
+    [[menu.main]]
+        name = "Links"
+        url = "/links"
+        weight = 7
