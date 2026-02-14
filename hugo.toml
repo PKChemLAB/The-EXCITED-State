@@ -43,9 +43,12 @@ hasCJKLanguage = true
         name = "email"
         url = "mailto:1265689026@qq.com"
 
-    # --- Favicon (如果以后有了图标可以取消注释) ---
-    # [params.assets]
-    #     favicon = "favicon.png"
+    [params.assets]
+    favicon = "favicon.png"
+    favicon16x16 = "favicon.png"
+    favicon32x32 = "favicon.png"
+    apple_touch_icon = "favicon.png"
+    safari_pinned_tab = "favicon.png"
 
 [menu]
     [[menu.main]]
