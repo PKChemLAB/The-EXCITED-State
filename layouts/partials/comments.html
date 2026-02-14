@@ -1,25 +1,60 @@
 <div class="comments">
-    <script>
-    function loadComment() {
-        let theme = localStorage.getItem('pref-theme') === 'dark' ? 'dark' : 'light';
-        let s = document.createElement('script');
-        s.src = 'https://giscus.app/client.js';
-        s.setAttribute('data-repo', 'PKChemLAB/The-EXCITED-State');
-        s.setAttribute('data-repo-id', 'R_kgDORQVY6g');
-        s.setAttribute('data-category', 'Announcements');
-        s.setAttribute('data-category-id', 'DIC_kwDORQVY6s4C2caC');
-        s.setAttribute('data-mapping', 'pathname');
-        s.setAttribute('data-strict', '0');
-        s.setAttribute('data-reactions-enabled', '1');
-        s.setAttribute('data-emit-metadata', '0');
-        s.setAttribute('data-input-position', 'bottom');
-        s.setAttribute('data-theme', theme);
-        s.setAttribute('data-lang', 'zh-CN');
-        s.setAttribute('crossorigin', 'anonymous');
-        s.setAttribute('async', '');
-        document.querySelector('div.comments').innerHTML = '';
-        document.querySelector('div.comments').appendChild(s);
-    }
-    loadComment();
-    </script>
+    <div id="giscus-container"></div>
 </div>
+
+<script>
+    // 1. 获取当前主题颜色的函数
+    function getGiscusTheme() {
+        // PaperMod 在 body 上加了 class="dark" 来表示深色模式
+        // 如果 body 包含 dark，或者本地存储是 dark，就用 dark 主题
+        return document.body.className.includes("dark") ? "dark" : "light";
+    }
+
+    // 2. 设置 Giscus 的参数
+    const giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "PKChemLAB/The-EXCITED-State",
+        "data-repo-id": "R_kgDORQVY6g",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDORQVY6s4C2caC",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": getGiscusTheme(), // 初始化时自动获取
+        "data-lang": "zh-CN",
+        "crossorigin": "anonymous",
+        "async": ""
+    };
+
+    // 3. 动态创建 Script 标签
+    const giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => {
+        giscusScript.setAttribute(key, value);
+    });
+    document.getElementById("giscus-container").appendChild(giscusScript);
+
+    // 4. ✅ 核心修复：监听主题切换按钮
+    const themeToggle = document.querySelector('#theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            // 设置一个小延时，确保 PaperMod 已经切完主题了我们再读取
+            setTimeout(() => {
+                const newTheme = getGiscusTheme();
+                const iframe = document.querySelector('iframe.giscus-frame');
+                
+                if (!iframe) return;
+
+                // 通过 postMessage 告诉 Giscus 切换主题，不用刷新页面
+                iframe.contentWindow.postMessage({
+                    giscus: {
+                        setConfig: {
+                            theme: newTheme
+                        }
+                    }
+                }, 'https://giscus.app');
+            }, 100); 
+        });
+    }
+</script>
