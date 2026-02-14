@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The EXCITED State</title>
+    <link>http://localhost:1313/The-EXCITED-State/</link>
+    <description>Recent content on The EXCITED State</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 14 Feb 2026 23:38:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/The-EXCITED-State/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome!</title>
+      <link>http://localhost:1313/The-EXCITED-State/posts/welcome/</link>
+      <pubDate>Sat, 14 Feb 2026 23:38:00 +0800</pubDate>
+      <guid>http://localhost:1313/The-EXCITED-State/posts/welcome/</guid>
+      <description>&lt;p&gt;欢迎访问我的博客，我在笔记中更新了光与分子相互作用一节的内容。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Links</title>
+      <link>http://localhost:1313/The-EXCITED-State/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/The-EXCITED-State/links/</guid>
+      <description>这里是 PKChemLAB 的朋友们</description>
+    </item>
+  </channel>
+</rss>

@@ -1,17 +1,31 @@
-@import url('https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-
+/* --- 1. 全局字体 (Global Font) --- */
 body {
+    /* 英文用 Merriweather (学术风)，中文用霞鹜文楷，最后兜底系统字体 */
     font-family: "Merriweather", "LXGW WenKai Screen", sans-serif !important;
+    font-size: 1rem;   /* 截图建议: 1rem */
+    line-height: 1.6;  /* 截图建议: 1.5，稍微调大一点点更易读 */
+    margin: 0;
 }
 
-/* 3. 标题字体加粗 */
+/* --- 2. 标题字体 (让标题更醒目) --- */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Merriweather", "LXGW WenKai Screen", sans-serif !important;
     font-weight: 700;
 }
 
-/* 4. 代码块字体 (保持等宽，推荐 JetBrains Mono 或 Fira Code) */
-code {
-    font-family: Consolas, Monaco, "Andale Mono", monospace !important;
+/* --- 3. 代码块字体 (Code Font) --- */
+/* 这里严格按照截图，使用 JetBrains Mono */
+.post-content pre, code {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 14px;      /* 截图是13px，建议14px看的更清楚 */
+    line-height: 1.4;     /* 截图是1.2，太挤了，1.4比较舒服 */
+    max-height: 40rem;    /* 限制代码块最大高度，太长会有滚动条 */
+}
+
+/* 修复行内代码块的小背景 (可选) */
+:not(pre) > code {
+    background: rgba(100, 100, 100, 0.1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #c7254e; /* 代码高亮色 */
 }

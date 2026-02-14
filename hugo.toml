@@ -28,16 +28,9 @@ theme = "PaperMod"
         title = "The EXCITED State"
         subtitle = "😜 Hi there! Welcome to my blog!"
         imageUrl = "https://github.com/PKChemLAB.png"
-        imageWidth = 120
-        imageHeight = 120
+        imageWidth = 200
+        imageHeight = 200
     
-        # 简介下方的按钮
-        [[params.profileMode.buttons]]
-            name = "📚 Posts"
-            url = "/posts"
-        [[params.profileMode.buttons]]
-            name = "🐙 GitHub"
-            url = "https://github.com/PKChemLAB"
 
     # --- 社交图标 ---
     [[params.socialIcons]]

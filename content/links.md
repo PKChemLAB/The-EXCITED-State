@@ -1,6 +1,5 @@
 ---
 title: "Links"
-layout: "archives"
 summary: "这里是 PKChemLAB 的朋友们"
 url: "/links/"
 ---
@@ -71,7 +70,7 @@ url: "/links/"
   }
 </style>
 
-## 🌟 合作伙伴
+## 这里是 PKChemLAB 的朋友们
 
 <div class="friend-div">
 
@@ -79,23 +78,7 @@ url: "/links/"
     <img class="friend-avatar" src="https://github.com/PKChemLAB.png" alt="PKChemLAB">
     <div class="friend-info">
       <span class="friend-name">PKChemLAB</span>
-      <span class="friend-desc">🧪 化学与代码的激发态实验室</span>
-    </div>
-  </a>
-
-  <a class="friend-card" href="https://github.com" target="_blank">
-    <img class="friend-avatar" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-    <div class="friend-info">
-      <span class="friend-name">GitHub</span>
-      <span class="friend-desc">全球最大的代码托管平台</span>
-    </div>
-  </a>
-
-  <a class="friend-card" href="https://gohugo.io" target="_blank">
-    <img class="friend-avatar" src="https://gohugo.io/images/hugo-logo-wide.svg" style="background: white; padding: 2px;" alt="Hugo">
-    <div class="friend-info">
-      <span class="friend-name">Hugo</span>
-      <span class="friend-desc">世界上最快的网站构建框架</span>
+      <span class="friend-desc">Owner of this blog</span>
     </div>
   </a>
 
@@ -103,11 +86,11 @@ url: "/links/"
 
 <br>
 
-> **📝 友链申请**
+> **友链申请**
 >
 > 欢迎交换友链！请在 [GitHub Issues](https://github.com/PKChemLAB/The-EXCITED-State/issues) 或邮件中留言。
 >
 > * **名称：** 你的博客名称
-> * **简介：** 一句话介绍（不要太长）
+> * **简介：** 一句话介绍
 > * **链接：** https://...
 > * **头像：** 图片链接
