@@ -1,0 +1,19 @@
+/* 1. 引入霞鹜文楷字体 (从在线 CDN 加载，速度快) */
+@import url('https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css');
+
+/* 2. 应用到全局 */
+body {
+    /* 英文用系统字体，中文优先用霞鹜文楷 */
+    font-family: "LXGW WenKai Screen", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* 3. 稍微调整一下文章标题的粗细，让它更好看 */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; 
+    font-family: "LXGW WenKai Screen", sans-serif !important;
+}
+
+/* 4. 优化代码块字体 (使用更适合代码的字体) */
+code {
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+}

@@ -21,17 +21,14 @@ theme = "PaperMod"
     [params.profileMode]
         enabled = true
         title = "The EXCITED State"
-        subtitle = "Theoretical Chemistry" 
+        subtitle = "😜 Hi there! Welcome to my blog!"
         imageUrl = "https://github.com/PKChemLAB.png" 
         imageWidth = 120
         imageHeight = 120
     
         # 简介下方的按钮
         [[params.profileMode.buttons]]
-            name = "📚 文章归档"
-            url = "/archives"
-        [[params.profileMode.buttons]]
-            name = "🐙 GitHub"
+            name = "GitHub"
             url = "https://github.com/PKChemLAB"
 
 # --- 社交图标 (必须这样写，PaperMod 才能识别) ---
@@ -46,26 +43,31 @@ theme = "PaperMod"
 [menu]
     # --- 顶部导航栏 ---
     [[menu.main]]
-        name = "首页"
+        name = "Homepage"
         url = "/"
         weight = 1
     
     [[menu.main]]
-        name = "文章"
+        name = "Posts"
         url = "/posts"
         weight = 2
         
     [[menu.main]]
-        name = "归档"
+        name = "Archives"
         url = "/archives"
         weight = 3
         
     [[menu.main]]
-        name = "标签"
+        name = "Tags"
         url = "/tags"
         weight = 4
         
     [[menu.main]]
-        name = "搜索"
+        name = "Search"
         url = "/search/"
         weight = 5
+
+    [[menu.main]]
+    name = "Notebook"  # 加个emoji更生动
+    url = "https://pkchemlab.github.io/Notes/"
+    weight = 6
