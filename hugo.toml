@@ -3,6 +3,8 @@ languageCode = 'zh-cn'
 title = "The EXCITED State"
 theme = "PaperMod"
 
+hasCJKLanguage = true
+
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
@@ -28,8 +30,8 @@ theme = "PaperMod"
         title = "The EXCITED State"
         subtitle = "😜 Hi there! Welcome to my blog!"
         imageUrl = "https://github.com/PKChemLAB.png"
-        imageWidth = 200
-        imageHeight = 200
+        imageWidth = 240
+        imageHeight = 240
     
 
     # --- 社交图标 ---
