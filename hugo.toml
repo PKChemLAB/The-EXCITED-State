@@ -1,4 +1,4 @@
-baseURL = 'https://PKChemLAB.github.io/' # 稍后如果你买域名，这里改成你的域名
+baseURL = 'https://pkchemlab.github.io/The-EXCITED-State/' 
 languageCode = 'zh-cn'
 title = "The EXCITED State"
 theme = "PaperMod"
