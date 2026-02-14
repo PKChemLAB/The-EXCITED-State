@@ -1,23 +1,72 @@
-baseURL = 'https://pkchemlab.github.io/The-EXCITED-State/' 
+baseURL = 'https://pkchemlab.github.io/The-EXCITED-State/'
 languageCode = 'zh-cn'
 title = "The EXCITED State"
 theme = "PaperMod"
 
+[outputs]
+    # 开启搜索功能必须的配置 (生成 search.json)
+    home = ["HTML", "RSS", "JSON"]
+
 [params]
-    defaultTheme = "auto" # 跟随系统深色模式
-    ShowReadingTime = true # 显示阅读时间
-    ShowShareButtons = true # 显示分享按钮
+    # --- 基础外观设置 ---
+    defaultTheme = "auto"       # 跟随系统深色模式
+    ShowReadingTime = true      # 显示阅读时间
+    ShowShareButtons = true     # 显示分享按钮
+    ShowWordCount = true        # 显示文章字数 (新增)
+    ShowCodeCopyButtons = true  # 代码块显示复制按钮 (写代码笔记必备)
+    ShowBreadCrumbs = true      # 显示面包屑导航
+    ShowToc = true              # 文章显示目录 (Table of Contents)
+    
+    # --- 首页个人简介模式 (Profile Mode) ---
+    [params.profileMode]
+        enabled = true
+        title = "The EXCITED State"
+        subtitle = "Theoretical Chemistry" 
+        imageUrl = "https://github.com/PKChemLAB.png" 
+        imageWidth = 120
+        imageHeight = 120
+    
+        # 简介下方的按钮
+        [[params.profileMode.buttons]]
+            name = "📚 文章归档"
+            url = "/archives"
+        [[params.profileMode.buttons]]
+            name = "🐙 GitHub"
+            url = "https://github.com/PKChemLAB"
+
+    # --- 社交图标 (显示在简介最下方) ---
+    [params.socialIcons]
+        Github = "https://github.com/PKChemLAB"
+        Email = "mailto:1265689026@qq.com"
+
+    # --- 网站图标 (Favicon) ---
+    # PaperMod 会自动在 static 目录下寻找 favicon.ico 或 favicon.png
+    [params.assets]
+        favicon = "<link / abs url>" 
 
 [menu]
-  [[menu.main]]
-    name = "首页"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "文章"
-    url = "/posts"
-    weight = 2
-  [[menu.main]]
-    name = "搜索"
-    url = "/search/"
-    weight = 3
+    # --- 顶部导航栏 ---
+    [[menu.main]]
+        name = "首页"
+        url = "/"
+        weight = 1
+    
+    [[menu.main]]
+        name = "文章"
+        url = "/posts"
+        weight = 2
+        
+    [[menu.main]]
+        name = "归档"
+        url = "/archives"
+        weight = 3
+        
+    [[menu.main]]
+        name = "标签"
+        url = "/tags"
+        weight = 4
+        
+    [[menu.main]]
+        name = "搜索"
+        url = "/search/"
+        weight = 5
