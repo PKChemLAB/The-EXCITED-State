@@ -29,3 +29,20 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     color: #c7254e; /* 代码高亮色 */
 }
+
+/* --- TOC 目录悬浮优化 (风格 A) --- */
+.toc a {
+    transition: all 0.3s ease; /* 所有变化都带有平滑过渡 */
+    padding: 2px 0; /* 增加一点上下间距 */
+    display: block; /* 让链接占据整行，更容易点中 */
+    border-left: 2px solid transparent; /* 预留左边框位置 */
+    padding-left: 5px; /* 文字离左边框一点距离 */
+    text-decoration: none !important; /* 去掉下划线 */
+}
+
+.toc a:hover {
+    color: var(--primary); /* 悬停时变成主题色 */
+    transform: translateX(5px); /* 向右移动 5px */
+    border-left: 2px solid var(--primary); /* 左边出现亮色竖条 */
+    background-color: rgba(var(--primary-rgb), 0.05); /* (可选) 极其微弱的背景色 */
+}
