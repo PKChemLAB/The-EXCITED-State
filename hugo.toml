@@ -25,11 +25,6 @@ theme = "PaperMod"
         imageUrl = "https://github.com/PKChemLAB.png" 
         imageWidth = 120
         imageHeight = 120
-    
-        # 简介下方的按钮
-        [[params.profileMode.buttons]]
-            name = "GitHub"
-            url = "https://github.com/PKChemLAB"
 
 # --- 社交图标 (必须这样写，PaperMod 才能识别) ---
         [[params.socialIcons]]

@@ -1,19 +1,21 @@
-/* 1. 引入霞鹜文楷字体 (从在线 CDN 加载，速度快) */
+/* 1. 引入字体：Merriweather (英文) 和 霞鹜文楷 (中文) */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 @import url('https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css');
 
-/* 2. 应用到全局 */
+/* 2. 全局字体设置 */
 body {
-    /* 英文用系统字体，中文优先用霞鹜文楷 */
-    font-family: "LXGW WenKai Screen", system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
+    /* 关键点：英文必须放在中文前面！ */
+    /* 浏览器会先看 Merriweather，如果是英文字母就用它；如果是汉字，Merriweather 没有，就会自动往后找霞鹜文楷 */
+    font-family: "Merriweather", "LXGW WenKai Screen", sans-serif !important;
 }
 
-/* 3. 稍微调整一下文章标题的粗细，让它更好看 */
+/* 3. 标题字体加粗 */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: bold; 
-    font-family: "LXGW WenKai Screen", sans-serif !important;
+    font-family: "Merriweather", "LXGW WenKai Screen", sans-serif !important;
+    font-weight: 700;
 }
 
-/* 4. 优化代码块字体 (使用更适合代码的字体) */
+/* 4. 代码块字体 (保持等宽，推荐 JetBrains Mono 或 Fira Code) */
 code {
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+    font-family: Consolas, Monaco, "Andale Mono", monospace !important;
 }
