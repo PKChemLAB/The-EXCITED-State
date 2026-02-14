@@ -39,11 +39,6 @@ theme = "PaperMod"
         Github = "https://github.com/PKChemLAB"
         Email = "mailto:1265689026@qq.com"
 
-    # --- 网站图标 (Favicon) ---
-    # PaperMod 会自动在 static 目录下寻找 favicon.ico 或 favicon.png
-    [params.assets]
-        favicon = "<link / abs url>" 
-
 [menu]
     # --- 顶部导航栏 ---
     [[menu.main]]
