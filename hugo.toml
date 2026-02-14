@@ -1,0 +1,23 @@
+baseURL = 'https://PKChemLAB.github.io/' # 稍后如果你买域名，这里改成你的域名
+languageCode = 'zh-cn'
+title = "The EXCITED State"
+theme = "PaperMod"
+
+[params]
+    defaultTheme = "auto" # 跟随系统深色模式
+    ShowReadingTime = true # 显示阅读时间
+    ShowShareButtons = true # 显示分享按钮
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "文章"
+    url = "/posts"
+    weight = 2
+  [[menu.main]]
+    name = "搜索"
+    url = "/search/"
+    weight = 3
