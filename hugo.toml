@@ -23,6 +23,7 @@ hasCJKLanguage = true
     ShowCodeCopyButtons = true
     ShowBreadCrumbs = true
     ShowToc = true
+    comments = true
     
     # --- 个人简介模式 ---
     [params.profileMode]
