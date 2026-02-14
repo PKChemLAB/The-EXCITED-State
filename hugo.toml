@@ -34,10 +34,14 @@ theme = "PaperMod"
             name = "🐙 GitHub"
             url = "https://github.com/PKChemLAB"
 
-    # --- 社交图标 (显示在简介最下方) ---
-    [params.socialIcons]
-        Github = "https://github.com/PKChemLAB"
-        Email = "mailto:1265689026@qq.com"
+# --- 社交图标 (必须这样写，PaperMod 才能识别) ---
+        [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/PKChemLAB"
+    
+        [[params.socialIcons]]
+        name = "email"
+        url = "mailto:1265689026@qq.com"
 
 [menu]
     # --- 顶部导航栏 ---
