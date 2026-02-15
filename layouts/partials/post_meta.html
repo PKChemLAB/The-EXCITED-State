@@ -1,0 +1,24 @@
+{{- $scratch := newScratch }}
+
+{{- /* 1. 显示日期 */ -}}
+{{- if not .Date.IsZero -}}
+  {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date.Format (default "2006-01-02 15:04:05" .Site.Params.DateFormat)) (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat)))) }}
+{{- end }}
+
+{{- /* 2. 显示阅读时间 (Reading Time) */ -}}
+{{- if (.Param "ShowReadingTime") -}}
+  {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{- end }}
+
+{{- /* 3. 显示字数 (Word Count) */ -}}
+{{- if (.Param "ShowWordCount") -}}
+  {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
+{{- end }}
+
+{{- /* 4. ✅ 新增：不蒜子阅读量 (View Count) */ -}}
+{{- /* 只有在不是本地预览的时候才加载，或者是为了测试直接加载 */ -}}
+{{- $scratch.Add "meta" (slice (printf "<span id='busuanzi_container_page_pv'>🔥 <span id='busuanzi_value_page_pv'></span> views</span>")) }}
+
+{{- with ($scratch.Get "meta") }}
+  {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
