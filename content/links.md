@@ -80,7 +80,7 @@ url: "/links/"
     </div>
   </a>
   
-  <a class="friend-card" href="https://plankton2025.best/" target="_blank">
+  <a class="friend-card" href="https://plankton2005.best/" target="_blank">
     <img class="friend-avatar" src="https://github.com/Mr2025x.png" alt="Plankton">
     <div class="friend-info">
       <span class="friend-name">Plankton</span>
