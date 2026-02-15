@@ -7,15 +7,15 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Welcome! | The EXCITED State</title>
 <meta name="keywords" content="">
-<meta name="description" content="欢迎访问我的博客，我在笔记中更新了光与分子相互作用一节的内容。">
+<meta name="description" content="欢迎访问我的博客，我在笔记中更新了一节的内容。在我的repo中，我上传了一份量子隧穿的模拟代码。">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/The-EXCITED-State/posts/welcome/">
-<link crossorigin="anonymous" href="/The-EXCITED-State/assets/css/stylesheet.35cdb6d997bfdb818756c233e6c4042a864d4756d11cf92bbc9616ffe2b0e98c.css" integrity="sha256-Nc222Ze/24GHVsIz5sQEKoZNR1bRHPkrvJYW/&#43;Kw6Yw=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/The-EXCITED-State/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/The-EXCITED-State/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/The-EXCITED-State/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/The-EXCITED-State/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/The-EXCITED-State/safari-pinned-tab.svg">
+<link crossorigin="anonymous" href="/The-EXCITED-State/assets/css/stylesheet.68e42ab38046b189900c48c269b648d7e6bf5c33e1437e8a61fa31ac56fa2c70.css" integrity="sha256-aOQqs4BGsYmQDEjCabZI1&#43;a/XDPhQ36KYfoxrFb6LHA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/The-EXCITED-State/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/The-EXCITED-State/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/The-EXCITED-State/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/The-EXCITED-State/favicon.png">
+<link rel="mask-icon" href="http://localhost:1313/The-EXCITED-State/favicon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/The-EXCITED-State/posts/welcome/">
@@ -70,7 +70,12 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script>
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
 </head>
 <body id="top">
     <header class="header">
@@ -153,12 +158,12 @@
     <h1 class="post-title entry-hint-parent">
       Welcome!
     </h1>
-    <div class="post-meta"><span title='2026-02-14 23:38:00 +0800 CST'>February 14, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>word</span>
+    <div class="post-meta"><span title='2026-01-25 23:38:00 +0800 CST'>January 25, 2026</span>&nbsp;·&nbsp;<span>1 min</span>&nbsp;·&nbsp;<span>48 words</span>
 
 </div>
   </header> 
 
-  <div class="post-content"><p>欢迎访问我的博客，我在笔记中更新了光与分子相互作用一节的内容。</p>
+  <div class="post-content"><p>欢迎访问我的博客，我在笔记中更新了一节的内容。在我的<a href="https://github.com/PKChemLAB/Quantum-Tunneling">repo</a>中，我上传了一份量子隧穿的模拟代码。</p>
 
 
   </div>
@@ -234,7 +239,66 @@
     </li>
 </ul>
 
-  </footer>
+  </footer><div class="comments">
+    <div id="giscus-container"></div>
+</div>
+
+<script>
+    
+    function getGiscusTheme() {
+        
+        
+        return document.body.className.includes("dark") ? "dark" : "light";
+    }
+
+    
+    const giscusAttributes = {
+        "src": "https://giscus.app/client.js",
+        "data-repo": "PKChemLAB/The-EXCITED-State",
+        "data-repo-id": "R_kgDORQVY6g",
+        "data-category": "Announcements",
+        "data-category-id": "DIC_kwDORQVY6s4C2caC",
+        "data-mapping": "pathname",
+        "data-strict": "0",
+        "data-reactions-enabled": "1",
+        "data-emit-metadata": "0",
+        "data-input-position": "bottom",
+        "data-theme": getGiscusTheme(), 
+        "data-lang": "zh-CN",
+        "crossorigin": "anonymous",
+        "async": ""
+    };
+
+    
+    const giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => {
+        giscusScript.setAttribute(key, value);
+    });
+    document.getElementById("giscus-container").appendChild(giscusScript);
+
+    
+    const themeToggle = document.querySelector('#theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            
+            setTimeout(() => {
+                const newTheme = getGiscusTheme();
+                const iframe = document.querySelector('iframe.giscus-frame');
+                
+                if (!iframe) return;
+
+                
+                iframe.contentWindow.postMessage({
+                    giscus: {
+                        setConfig: {
+                            theme: newTheme
+                        }
+                    }
+                }, 'https://giscus.app');
+            }, 100); 
+        });
+    }
+</script>
 </article>
     </main>
     

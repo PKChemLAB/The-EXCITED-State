@@ -5,7 +5,6 @@ url: "/links/"
 ---
 
 <style>
-  /* 友链容器 */
   .friend-div {
     display: flex;
     flex-wrap: wrap;
@@ -13,10 +12,9 @@ url: "/links/"
     margin-top: 20px;
   }
   
-  /* 卡片样式 */
   .friend-card {
     width: 100%;
-    max-width: 300px; /* 电脑上限制宽度 */
+    max-width: 300px; 
     background: var(--entry); /* 自动跟随主题黑/白模式 */
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -79,6 +77,14 @@ url: "/links/"
     <div class="friend-info">
       <span class="friend-name">PKChemLAB</span>
       <span class="friend-desc">Owner of this blog</span>
+    </div>
+  </a>
+  
+  <a class="friend-card" href="https://plankton2025.best/" target="_blank">
+    <img class="friend-avatar" src="https://github.com/Mr2025x.png" alt="Plankton">
+    <div class="friend-info">
+      <span class="friend-name">Plankton</span>
+      <span class="friend-desc">这里是痞老板的 Blog! 🍔</span>
     </div>
   </a>
 

@@ -6,14 +6,14 @@
     <description>Recent content in Posts on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Feb 2026 23:38:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 23:38:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/The-EXCITED-State/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome!</title>
       <link>http://localhost:1313/The-EXCITED-State/posts/welcome/</link>
-      <pubDate>Sat, 14 Feb 2026 23:38:00 +0800</pubDate>
+      <pubDate>Sun, 25 Jan 2026 23:38:00 +0800</pubDate>
       <guid>http://localhost:1313/The-EXCITED-State/posts/welcome/</guid>
-      <description>&lt;p&gt;欢迎访问我的博客，我在笔记中更新了光与分子相互作用一节的内容。&lt;/p&gt;</description>
+      <description>&lt;p&gt;欢迎访问我的博客，我在笔记中更新了一节的内容。在我的&lt;a href=&#34;https://github.com/PKChemLAB/Quantum-Tunneling&#34;&gt;repo&lt;/a&gt;中，我上传了一份量子隧穿的模拟代码。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
