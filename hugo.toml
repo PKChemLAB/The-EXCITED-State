@@ -14,6 +14,10 @@ hasCJKLanguage = true
         [markup.goldmark.renderer]
             unsafe = true
 
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
 [params]
     # --- 基础外观 ---
     defaultTheme = "auto"
@@ -24,6 +28,7 @@ hasCJKLanguage = true
     ShowBreadCrumbs = true
     ShowToc = true
     comments = true
+    showTagsInHome = true
     
     # --- 个人简介模式 ---
     [params.profileMode]
