@@ -25,6 +25,7 @@ url: "/links/"
     text-decoration: none !important; /* 去掉链接下划线 */
     color: var(--primary) !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    gap: 20px;
   }
 
   /* 鼠标悬停特效：上浮 + 发光 */
@@ -34,15 +35,15 @@ url: "/links/"
     border-color: var(--primary); /* 边框变色 */
   }
 
-  /* 头像样式 */
-  .friend-avatar {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 2px solid var(--tertiary);
-    object-fit: cover;
-  }
+
+.friend-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 0px !important; /* 👇 改成0，强制清零 */
+  border: 2px solid var(--tertiary);
+  object-fit: cover;
+}
 
   /* 文字区域 */
   .friend-info {

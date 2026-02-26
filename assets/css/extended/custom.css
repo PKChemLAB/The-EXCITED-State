@@ -41,3 +41,49 @@ h1, h2, h3, h4, h5, h6 {
     border-left: 2px solid var(--primary); 
     background-color: rgba(var(--primary-rgb), 0.05);
 }
+
+.post-entry {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-5px); /* 向上浮动 5px，可自行调整数值 */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* 添加阴影增加立体感 */
+}
+
+
+.main-menu a, 
+.menu a,
+#menu a{
+  background-image: linear-gradient(#8fadf4, #8fadf4);
+  background-size: 0% 2px; /* 2px 是下划线粗细，可改 */
+  background-repeat: no-repeat;
+  
+  /* 👇 关键修改：下划线位置 */
+  background-position: 0 calc(100% - 18px); /* 从左侧开始，紧贴底部 */
+  /* 如果觉得太靠上/靠下，把上面那句换成下面这句，微调 0px 这个数值 */
+  /* background-position: 0 calc(100% - 0px); */ 
+  
+  transition: background-size 0.3s ease, color 0.3s ease !important;
+  
+  /* 👇 关键修改：移除额外的内边距，紧贴文字 */
+  padding-bottom: 0px !important; 
+}
+
+/* 悬停触发 */
+nav a:hover,
+.main-menu a:hover,
+.menu a:hover,
+#menu a:hover {
+  color: #8fadf4 !important;
+  background-size: 100% 2px;
+}
+
+.slogan-text {
+  display: block !important; /* 强制单独占一行 */
+  margin-top: 1rem !important;
+  font-style: italic !important; /* 👇 核心：强制斜体 */
+  font-size: 1rem !important;
+  opacity: 0.7 !important;
+  color: #165DFF !important; /* 可选：改成你的主题蓝 */
+}

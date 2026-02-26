@@ -3,58 +3,87 @@
 </div>
 
 <script>
-    // 1. 获取当前主题颜色的函数
+    // ========== 1. 精准匹配你的PaperMod主题检测 ==========
     function getGiscusTheme() {
-        // PaperMod 在 body 上加了 class="dark" 来表示深色模式
-        // 如果 body 包含 dark，或者本地存储是 dark，就用 dark 主题
-        return document.body.className.includes("dark") ? "dark" : "light";
+        // 直接读取html标签的data-theme属性，和你的站点完全对应
+        const pageTheme = document.documentElement.getAttribute('data-theme');
+        console.log('[Giscus调试] 页面主题:', pageTheme);
+        // 页面是dark就用深色主题，否则用浅色
+        return pageTheme === 'dark' ? 'dark_dimmed' : 'light';
     }
 
-    // 2. 设置 Giscus 的参数
-    const giscusAttributes = {
-        "src": "https://giscus.app/client.js",
-        "data-repo": "PKChemLAB/The-EXCITED-State",
-        "data-repo-id": "R_kgDORQVY6g",
-        "data-category": "Announcements",
-        "data-category-id": "DIC_kwDORQVY6s4C2caC",
-        "data-mapping": "pathname",
-        "data-strict": "0",
-        "data-reactions-enabled": "1",
-        "data-emit-metadata": "0",
-        "data-input-position": "bottom",
-        "data-theme": getGiscusTheme(), // 初始化时自动获取
-        "data-lang": "zh-CN",
-        "crossorigin": "anonymous",
-        "async": ""
-    };
+    // ========== 2. 稳妥加载Giscus（不会清空容器，保证评论区必显示） ==========
+    function loadGiscus() {
+        const container = document.getElementById('giscus-container');
+        if (!container) return;
 
-    // 3. 动态创建 Script 标签
-    const giscusScript = document.createElement("script");
-    Object.entries(giscusAttributes).forEach(([key, value]) => {
-        giscusScript.setAttribute(key, value);
-    });
-    document.getElementById("giscus-container").appendChild(giscusScript);
+        // 移除旧的脚本，避免重复加载，不碰容器其他内容
+        const oldScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (oldScript) oldScript.remove();
 
-    // 4. ✅ 核心修复：监听主题切换按钮
-    const themeToggle = document.querySelector('#theme-toggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            // 设置一个小延时，确保 PaperMod 已经切完主题了我们再读取
-            setTimeout(() => {
-                const newTheme = getGiscusTheme();
-                const iframe = document.querySelector('iframe.giscus-frame');
-                
-                if (!iframe) return;
+        // 你的Giscus配置，完全保留你原来的参数
+        const giscusConfig = {
+            src: "https://giscus.app/client.js",
+            "data-repo": "PKChemLAB/The-EXCITED-State",
+            "data-repo-id": "R_kgDORQVY6g",
+            "data-category": "Announcements",
+            "data-category-id": "DIC_kwDORQVY6s4C2caC",
+            "data-mapping": "pathname",
+            "data-strict": "0",
+            "data-reactions-enabled": "1",
+            "data-emit-metadata": "0",
+            "data-input-position": "bottom",
+            "data-theme": getGiscusTheme(),
+            "data-lang": "zh-CN",
+            crossorigin: "anonymous",
+            async: ""
+        };
 
-                // 通过 postMessage 告诉 Giscus 切换主题，不用刷新页面
-                iframe.contentWindow.postMessage({
-                    giscus: {
-                        setConfig: {
-                            theme: newTheme
-                        }
-                    }
-                }, 'https://giscus.app');
-            }, 100); 
+        // 创建并插入脚本
+        const giscusScript = document.createElement("script");
+        Object.entries(giscusConfig).forEach(([key, value]) => {
+            giscusScript.setAttribute(key, value);
+        });
+        container.appendChild(giscusScript);
+    }
+
+    // ========== 3. 无刷新切换主题 ==========
+    function syncGiscusTheme() {
+        const newTheme = getGiscusTheme();
+        const giscusIframe = document.querySelector('iframe.giscus-frame');
+        
+        if (giscusIframe) {
+            // 给Giscus发消息切换主题，无刷新丝滑切换
+            giscusIframe.contentWindow.postMessage({
+                giscus: { setConfig: { theme: newTheme } }
+            }, 'https://giscus.app');
+            console.log('[Giscus调试] 已同步主题为:', newTheme);
+        }
+    }
+
+    // ========== 4. 全方位监听主题切换（覆盖所有场景） ==========
+    // 1. 监听主题切换按钮点击
+    const themeToggleBtn = document.querySelector('#theme-toggle');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            // 延时200ms，等PaperMod先改完data-theme再同步
+            setTimeout(syncGiscusTheme, 200);
         });
     }
+
+    // 2. 监听html标签的data-theme属性变化（兜底，任何方式改主题都能捕捉）
+    const themeObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+                syncGiscusTheme();
+            }
+        });
+    });
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme'] // 只监听data-theme属性，精准高效
+    });
+
+    // 页面加载完成后初始化
+    document.addEventListener('DOMContentLoaded', loadGiscus);
 </script>

@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>The EXCITED State</title>
-    <link>http://localhost:1313/The-EXCITED-State/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 26 Feb 2026 18:49:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/The-EXCITED-State/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>科学是一场宏大的建模</title>
-      <link>http://localhost:1313/The-EXCITED-State/posts/science-is-a-grand-enterprise-of-modeling/</link>
+      <link>http://localhost:1313/posts/science-is-a-grand-enterprise-of-modeling/</link>
       <pubDate>Thu, 26 Feb 2026 18:49:00 +0800</pubDate>
-      <guid>http://localhost:1313/The-EXCITED-State/posts/science-is-a-grand-enterprise-of-modeling/</guid>
+      <guid>http://localhost:1313/posts/science-is-a-grand-enterprise-of-modeling/</guid>
       <description>&lt;p&gt;　　近期在先前量子力学的基础上学习分子谱学，深感震撼。我想科学理论从来不是无限逼近绝对真理的线性过程，而是一套基于实证、可证伪、可迭代的拟合模型。科学的进步，是一场 “建模 - 检验 - 修正 - 重构” 的螺旋式上升过程，这也许是科学区别于空想的核心。&lt;/p&gt;</description>
     </item>
     <item>
       <title>What Did Hubble See on Your Birthday?</title>
-      <link>http://localhost:1313/The-EXCITED-State/posts/what-did-hubble-see-on-your-birthday/</link>
+      <link>http://localhost:1313/posts/what-did-hubble-see-on-your-birthday/</link>
       <pubDate>Mon, 23 Feb 2026 17:24:00 +0800</pubDate>
-      <guid>http://localhost:1313/The-EXCITED-State/posts/what-did-hubble-see-on-your-birthday/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;alt&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/The-EXCITED-State/posts/what-did-hubble-see-on-your-birthday/figures/hubble.jpg&#34;&gt;
+      <guid>http://localhost:1313/posts/what-did-hubble-see-on-your-birthday/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;alt&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/what-did-hubble-see-on-your-birthday/figures/hubble.jpg&#34;&gt;
 The Hubble Space Telescope captured this image on my birthday in a certain year. The star-forming region, called Sharpless 2-106, looks like a celestial angel. The &amp;ldquo;wings&amp;rdquo; of the nebula are twin lobes of hot gas that stretch outward from a massive, young star near the center of the image. In this boundless cosmos, what was going through my mind back then?&lt;/p&gt;</description>
     </item>
     <item>
       <title>ACEE 命题结束</title>
-      <link>http://localhost:1313/The-EXCITED-State/posts/acee-%E5%91%BD%E9%A2%98/</link>
-      <pubDate>Tue, 17 Feb 2026 17:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/The-EXCITED-State/posts/acee-%E5%91%BD%E9%A2%98/</guid>
-      <description>&lt;p&gt;　　从题目构思到落地，前前后后花了十多天时间，改了又改，花了很多心血。希望能有一些挑战，同时也不会过多为难完成报名表的勇士们。有时候真实地感到自己知识的匮乏，以及学过东西的快速遗忘，命题的过程也是我自己学习的过程。题出得好不好，可能也得交给做题者来评判。等到招生结束，我也许会把题目挂在这里，供路过者批评。&lt;/p&gt;</description>
+      <link>http://localhost:1313/posts/acee-%E5%91%BD%E9%A2%98/</link>
+      <pubDate>Wed, 18 Feb 2026 17:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/acee-%E5%91%BD%E9%A2%98/</guid>
+      <description>&lt;p&gt;　　从题目构思到落地，前前后后花了十多天时间，改了又改，花了很多心血。真切地感谢几位为题目提出宝贵意见的学长和同学，感谢排版的同学（感觉自己的Latex十分不熟练），感谢组织与在出题过程中给我帮助的学委。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcome!</title>
-      <link>http://localhost:1313/The-EXCITED-State/posts/welcome/</link>
+      <link>http://localhost:1313/posts/welcome/</link>
       <pubDate>Sun, 25 Jan 2026 23:38:00 +0800</pubDate>
-      <guid>http://localhost:1313/The-EXCITED-State/posts/welcome/</guid>
+      <guid>http://localhost:1313/posts/welcome/</guid>
       <description>&lt;p&gt;　　欢迎访问我的博客，我在笔记中更新了&lt;a href=&#34;https://pkchemlab.github.io/Notes/structure-spectroscopy/chapter-1/&#34;&gt;光与分子相互作用&lt;/a&gt;一节的内容。在我的&lt;a href=&#34;https://github.com/PKChemLAB/Quantum-Tunneling&#34;&gt;repo&lt;/a&gt;中，我上传了一份量子隧穿的模拟代码。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Links</title>
-      <link>http://localhost:1313/The-EXCITED-State/links/</link>
+      <link>http://localhost:1313/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/The-EXCITED-State/links/</guid>
+      <guid>http://localhost:1313/links/</guid>
       <description>这里是 PKChemLAB 的朋友们</description>
     </item>
   </channel>
