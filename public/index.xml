@@ -6,8 +6,15 @@
     <description>Recent content on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Feb 2026 17:24:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 18:49:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/The-EXCITED-State/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>科学是一场宏大的建模</title>
+      <link>http://localhost:1313/The-EXCITED-State/posts/%E7%A7%91%E5%AD%A6%E5%B0%B1%E6%98%AF%E5%BB%BA%E6%A8%A1/</link>
+      <pubDate>Thu, 26 Feb 2026 18:49:00 +0800</pubDate>
+      <guid>http://localhost:1313/The-EXCITED-State/posts/%E7%A7%91%E5%AD%A6%E5%B0%B1%E6%98%AF%E5%BB%BA%E6%A8%A1/</guid>
+      <description>&lt;p&gt;　　近期在先前量子力学的基础上学习分子谱学，深感震撼。我想科学理论从来不是无限逼近绝对真理的线性过程，而是一套基于实证、可证伪、可迭代的拟合模型。科学的进步，是一场 “建模 - 检验 - 修正 - 重构” 的螺旋式上升过程，这也许是科学区别于空想的核心。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>What Did Hubble See on Your Birthday?</title>
       <link>http://localhost:1313/The-EXCITED-State/posts/what-did-hubble-see-on-your-birthday/</link>
