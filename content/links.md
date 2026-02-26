@@ -2,6 +2,7 @@
 title: "Links"
 summary: "这里是 PKChemLAB 的朋友们"
 url: "/links/"
+toc: false
 ---
 
 <style>
@@ -68,23 +69,15 @@ url: "/links/"
   }
 </style>
 
-## 这里是 PKChemLAB 的朋友们
+### 这里是 PKChemLAB 的朋友们
 
 <div class="friend-div">
-
-  <a class="friend-card" href="https://pkchemlab.github.io/The-EXCITED-State/" target="_blank">
-    <img class="friend-avatar" src="https://github.com/PKChemLAB.png" alt="PKChemLAB">
-    <div class="friend-info">
-      <span class="friend-name">PKChemLAB</span>
-      <span class="friend-desc">Owner of this blog</span>
-    </div>
-  </a>
   
   <a class="friend-card" href="https://plankton2005.best/" target="_blank">
     <img class="friend-avatar" src="https://github.com/Mr2025x.png" alt="Plankton">
     <div class="friend-info">
-      <span class="friend-name">Plankton</span>
-      <span class="friend-desc">这里是痞老板的 Blog! 🍔</span>
+      <span class="friend-name">痞老板</span>
+      <span class="friend-desc">Stay hungry, stay foolish.</span>
     </div>
   </a>
 
@@ -92,7 +85,7 @@ url: "/links/"
 
 <br>
 
-> **友链申请**
+###  **友链申请**
 >
 > 欢迎交换友链！请在 [GitHub Issues](https://github.com/PKChemLAB/The-EXCITED-State/issues) 或邮件中留言。
 >
@@ -100,3 +93,11 @@ url: "/links/"
 > * **简介：** 一句话介绍
 > * **链接：** https://...
 > * **头像：** 图片链接
+
+
+###  **我的站点信息**
+>
+> * **名称：** The EXCITED State
+> * **简介：** Theoretical Chemistry — "Life is nothing but an electron looking for a place to rest."
+> * **链接：** https://pkchemlab.github.io/The-EXCITED-State/
+> * **头像：** https://github.com/PKChemLAB.png

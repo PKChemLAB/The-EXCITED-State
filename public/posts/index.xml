@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/The-EXCITED-State/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>科学是一场宏大的建模</title>
-      <link>http://localhost:1313/The-EXCITED-State/posts/%E7%A7%91%E5%AD%A6%E5%B0%B1%E6%98%AF%E5%BB%BA%E6%A8%A1/</link>
+      <link>http://localhost:1313/The-EXCITED-State/posts/science-is-a-grand-enterprise-of-modeling/</link>
       <pubDate>Thu, 26 Feb 2026 18:49:00 +0800</pubDate>
-      <guid>http://localhost:1313/The-EXCITED-State/posts/%E7%A7%91%E5%AD%A6%E5%B0%B1%E6%98%AF%E5%BB%BA%E6%A8%A1/</guid>
+      <guid>http://localhost:1313/The-EXCITED-State/posts/science-is-a-grand-enterprise-of-modeling/</guid>
       <description>&lt;p&gt;　　近期在先前量子力学的基础上学习分子谱学，深感震撼。我想科学理论从来不是无限逼近绝对真理的线性过程，而是一套基于实证、可证伪、可迭代的拟合模型。科学的进步，是一场 “建模 - 检验 - 修正 - 重构” 的螺旋式上升过程，这也许是科学区别于空想的核心。&lt;/p&gt;</description>
     </item>
     <item>
@@ -28,14 +28,14 @@ The Hubble Space Telescope captured this image on my birthday in a certain year.
       <link>http://localhost:1313/The-EXCITED-State/posts/acee-%E5%91%BD%E9%A2%98/</link>
       <pubDate>Tue, 17 Feb 2026 17:00:00 +0800</pubDate>
       <guid>http://localhost:1313/The-EXCITED-State/posts/acee-%E5%91%BD%E9%A2%98/</guid>
-      <description>&lt;p&gt;从构思到题目落地，前前后后花了十多天时间，改了又改，花了很多心血。希望能有一些挑战，同时也不会过多为难完成报名表的勇士们。有时候真实地感到自己知识的匮乏，以及学过东西的快速遗忘，命题的过程也是我自己学习的过程。题出得好不好，可能也得交给做题者来评判。等到招生结束，我也许会把题目挂在这里，供路过者批评。&lt;/p&gt;</description>
+      <description>&lt;p&gt;　　从题目构思到落地，前前后后花了十多天时间，改了又改，花了很多心血。希望能有一些挑战，同时也不会过多为难完成报名表的勇士们。有时候真实地感到自己知识的匮乏，以及学过东西的快速遗忘，命题的过程也是我自己学习的过程。题出得好不好，可能也得交给做题者来评判。等到招生结束，我也许会把题目挂在这里，供路过者批评。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcome!</title>
       <link>http://localhost:1313/The-EXCITED-State/posts/welcome/</link>
       <pubDate>Sun, 25 Jan 2026 23:38:00 +0800</pubDate>
       <guid>http://localhost:1313/The-EXCITED-State/posts/welcome/</guid>
-      <description>&lt;p&gt;欢迎访问我的博客，我在笔记中更新了&lt;a href=&#34;https://pkchemlab.github.io/Notes/structure-spectroscopy/chapter-1/&#34;&gt;光与分子相互作用&lt;/a&gt;一节的内容。在我的&lt;a href=&#34;https://github.com/PKChemLAB/Quantum-Tunneling&#34;&gt;repo&lt;/a&gt;中，我上传了一份量子隧穿的模拟代码。&lt;/p&gt;</description>
+      <description>&lt;p&gt;　　欢迎访问我的博客，我在笔记中更新了&lt;a href=&#34;https://pkchemlab.github.io/Notes/structure-spectroscopy/chapter-1/&#34;&gt;光与分子相互作用&lt;/a&gt;一节的内容。在我的&lt;a href=&#34;https://github.com/PKChemLAB/Quantum-Tunneling&#34;&gt;repo&lt;/a&gt;中，我上传了一份量子隧穿的模拟代码。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
