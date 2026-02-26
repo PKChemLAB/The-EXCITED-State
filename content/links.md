@@ -2,7 +2,6 @@
 title: "Links"
 summary: "这里是 PKChemLAB 的朋友们"
 url: "/links/"
-toc: false
 ---
 
 <style>
