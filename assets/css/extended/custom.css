@@ -87,3 +87,49 @@ nav a:hover,
   opacity: 0.7 !important;
   color: #165DFF !important; /* 可选：改成你的主题蓝 */
 }
+
+.profile img:hover {
+  transform: rotate(360deg);
+  transition: transform 0.8s ease-in-out;
+  box-shadow: 0 0 25px var(--primary);
+}
+
+.post-tags a,
+.tags a,
+.terms-tags a {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  margin: 0.2em 0.3em;
+  border-radius: 9999px; /* 胶囊形状 */
+  font-size: 0.9em;
+  text-decoration: none;
+  background-color: var(--code-bg); /* 复用全局背景变量 */
+  color: var(--secondary); /* 复用全局文字色变量 */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 统一平滑过渡 */
+}
+
+/* --- 全场景Hover核心效果（完全统一） --- */
+.post-tags a:hover,
+.tags a:hover,
+.terms-tags a:hover {
+  background-color: var(--primary); /* 主题色背景 */
+  color: #fff; /* 文字变白 */
+  transform: translateY(-2px) scale(1.05); /* 上浮+缩放动效 */
+  box-shadow: 0 4px 12px rgba(22, 93, 255, 0.3); /* 主题色阴影 */
+}
+
+/* --- 深色模式全场景适配 --- */
+.dark .post-tags a,
+.dark .tags a,
+.dark .terms-tags a {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dark .post-tags a:hover,
+.dark .tags a:hover,
+.dark .terms-tags a:hover {
+  background-color: var(--primary);
+  color: #000; /* 深色模式下文字对比度优化 */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
