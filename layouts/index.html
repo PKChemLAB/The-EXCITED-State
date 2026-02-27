@@ -1,0 +1,35 @@
+{{ define "main" }}
+
+  {{/* 这是 Profile Mode 专属覆盖代码 */}}
+  {{- if .Site.Params.profileMode.enabled }}
+    <section class="profile">
+      <div class="profile_inner">
+        {{/* 1. 渲染头像 */}}
+        {{- if .Site.Params.profileMode.imageUrl }}
+          <img src="{{ .Site.Params.profileMode.imageUrl }}" alt="{{ .Site.Params.profileMode.title }}" width="{{ .Site.Params.profileMode.imageWidth }}" height="{{ .Site.Params.profileMode.imageHeight }}">
+        {{- end }}
+
+        {{/* 2. 渲染标题和副标题 */}}
+        <h1>{{ .Site.Params.profileMode.title }}</h1>
+        {{- with .Site.Params.profileMode.subtitle }}
+          <span>{{ . | markdownify }}</span>
+        {{- end }}
+
+        {{/* 3. 渲染社交图标 (调用主题原生功能，绝对安全) */}}
+        {{- partial "social_icons.html" -}}
+
+        {{/* 4. 我们要加的名言：精准插在这里 */}}
+        <div class="home-quote">
+          <p class="quote-content">"Life is nothing but an electron looking for a place to rest."</p>
+          <p class="quote-author">— Albert Szent-Györgyi (Nobel Prize, Physiology or Medicine, 1937)</p>
+        </div>
+
+      </div>
+    </section>
+
+  {{/* 如果不是 Profile Mode，就回退到主题默认行为 */}}
+  {{- else }}
+    {{- partial "list.html" . }}
+  {{- end }}
+
+{{ end }}

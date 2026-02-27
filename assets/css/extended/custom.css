@@ -134,4 +134,28 @@ nav a:hover,
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
+html {
+    font-size: 120% !important;
+}
 
+
+/* 首页名言样式 - 完美适配深浅模式和Profile Mode */
+.home-quote {
+    margin-top: 1.6rem; /* 调整这个数值，控制和上方图标的间距 */
+    text-align: center; /* 和图标保持居中对齐 */
+    line-height: 1.6;
+}
+
+.home-quote .quote-content {
+    margin: 0;
+    font-style: italic;
+    color: var(--secondary); /* 自动适配主题深浅色模式 */
+    font-size: 0.98rem; /* 调整字号大小 */
+}
+
+.home-quote .quote-author {
+    margin: 0.4rem 0 0 0;
+    font-size: 0.85rem;
+    color: var(--tertiary);
+    opacity: 0.8;
+}

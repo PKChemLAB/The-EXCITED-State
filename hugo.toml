@@ -36,8 +36,8 @@ hasCJKLanguage = true
         title = "The EXCITED State"
         subtitle = "😜 Hi there! Welcome to my blog!" 
         imageUrl = "https://github.com/PKChemLAB.png"
-        imageWidth = 310
-        imageHeight = 310
+        imageWidth = 330
+        imageHeight = 330
     
 
     # --- 社交图标 ---
