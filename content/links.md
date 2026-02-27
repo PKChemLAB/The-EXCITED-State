@@ -81,6 +81,16 @@ url: "/links/"
     </div>
   </a>
 
+  <a class="friend-card" href="https://misaka314159.github.io/" target="_blank">
+    <img class="friend-avatar" src="https://github.com/Misaka314159.png" alt="Plankton">
+    <div class="friend-info">
+      <span class="friend-name">Misaka's Blog</span>
+      <span class="friend-desc">Beyond the sky, into the firmament.</span>
+    </div>
+  </a>
+
+
+
 </div>
 
 <br>
@@ -98,6 +108,6 @@ url: "/links/"
 ###  **我的站点信息**
 >
 > * **名称：** The EXCITED State
-> * **简介：** Theoretical Chemistry — "Life is nothing but an electron looking for a place to rest."
-> * **链接：** https://pkchemlab.github.io/The-EXCITED-State/
+> * **简介：** Life is nothing but an electron looking for a place to rest.
+> * **链接：** https://excitedstate.us.kg
 > * **头像：** https://github.com/PKChemLAB.png

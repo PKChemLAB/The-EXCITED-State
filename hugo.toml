@@ -34,10 +34,10 @@ hasCJKLanguage = true
     [params.profileMode]
         enabled = true
         title = "The EXCITED State"
-        subtitle = "😜 Hi there! Welcome to my blog!"
+        subtitle = "😜 Hi there! Welcome to my blog!" 
         imageUrl = "https://github.com/PKChemLAB.png"
-        imageWidth = 300
-        imageHeight = 300
+        imageWidth = 310
+        imageHeight = 310
     
 
     # --- 社交图标 ---
