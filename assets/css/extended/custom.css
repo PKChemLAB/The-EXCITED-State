@@ -161,6 +161,7 @@ html {
 }
 
 
+/* ==================== 日间模式淡米黄色定制 ==================== */
 :root {
     /* 核心页面背景：淡米黄色 */
     --theme: #faf8f5; 
@@ -179,24 +180,33 @@ html {
     --blockquote-border: #c9b89f;
 }
 
-/* ==================== 夜间模式深色适配（核心修复） ==================== */
-html.dark {
-    /* 夜间模式引用块：深色背景，完全适配黑底，不会再出现米黄色 */
+/* ==================== 夜间模式深色适配（核心修复，兼容data-theme属性） ==================== */
+/* 同时兼容 PaperMod 两种主题标记方式，确保万无一失 */
+html.dark,
+html[data-theme="dark"] {
+    /* 夜间模式变量全量覆盖 */
     --blockquote-bg: #2a2a2a;
     --blockquote-border: #4a4a4a;
-    /* 夜间模式行内代码：同步适配深色，避免浅色突兀 */
     --code-bg: #2a2a2a;
-    /* 如需微调夜间模式全局背景，可取消下面的注释修改
-    --theme: #1e1e1e;
-    --entry: #252525;
-    */
+    --secondary: #a0a0a0; /* 夜间模式提亮文字，避免看不清 */
+    --primary: #e0e0e0;
+    --content: #c0c0c0;
 }
 
-/* ==================== 引用块分主题自动适配 ==================== */
-blockquote {
-    background: var(--blockquote-bg);
-    border-left: 4px solid var(--blockquote-border);
+/* ==================== 引用块高优先级样式（强制覆盖主题默认） ==================== */
+.post-content blockquote {
+    background: var(--blockquote-bg) !important;
+    border-left: 4px solid var(--blockquote-border) !important;
     margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    color: var(--secondary);
+    padding: 0.8rem 1.2rem;
+    color: var(--secondary) !important;
+    border-radius: 4px;
+}
+
+/* ==================== 行内代码同步适配（避免夜间浅色突兀） ==================== */
+.post-content code:not(.hljs) {
+    background: var(--code-bg) !important;
+    color: var(--primary) !important;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
 }
