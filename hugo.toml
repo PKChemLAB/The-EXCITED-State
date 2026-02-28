@@ -29,6 +29,7 @@ hasCJKLanguage = true
     ShowToc = true
     comments = true
     showTagsInHome = true
+    busuanzi = true
     
     # --- 个人简介模式 ---
     [params.profileMode]

@@ -159,3 +159,44 @@ html {
     color: var(--tertiary);
     opacity: 0.8;
 }
+
+
+:root {
+    /* 核心页面背景：淡米黄色 */
+    --theme: #faf8f5; 
+    /* 文章卡片背景（保持白色更有层次，也可设为 #fdfcf9 统一米调） */
+    --entry: #ffffff; 
+    /* 文字颜色微调：降低对比度，更护眼 */
+    --primary: #2d2d2d;   /* 标题主色 */
+    --content: #444444;   /* 正文主色 */
+    --secondary: #666666; /* 次要文字/备注色 */
+    /* 边框与分割线，适配米黄调 */
+    --border: #e8e4df;
+    /* 行内代码背景（日间） */
+    --code-bg: #f5f0e8;
+    /* 引用块专属变量（日间） */
+    --blockquote-bg: #f5f0e8;
+    --blockquote-border: #c9b89f;
+}
+
+/* ==================== 夜间模式深色适配（核心修复） ==================== */
+html.dark {
+    /* 夜间模式引用块：深色背景，完全适配黑底，不会再出现米黄色 */
+    --blockquote-bg: #2a2a2a;
+    --blockquote-border: #4a4a4a;
+    /* 夜间模式行内代码：同步适配深色，避免浅色突兀 */
+    --code-bg: #2a2a2a;
+    /* 如需微调夜间模式全局背景，可取消下面的注释修改
+    --theme: #1e1e1e;
+    --entry: #252525;
+    */
+}
+
+/* ==================== 引用块分主题自动适配 ==================== */
+blockquote {
+    background: var(--blockquote-bg);
+    border-left: 4px solid var(--blockquote-border);
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: var(--secondary);
+}
