@@ -89,7 +89,13 @@ url: "/links/"
     </div>
   </a>
 
-
+  <a class="friend-card" href=" https://evan0571.github.io/" target="_blank">
+    <img class="friend-avatar" src="https://github.com/Evan0571.png" alt="Plankton">
+    <div class="friend-info">
+      <span class="friend-name">Evan's Blog</span>
+      <span class="friend-desc">Knowing yourself is the beginning of all wisdom</span>
+    </div>
+  </a>
 
 </div>
 
