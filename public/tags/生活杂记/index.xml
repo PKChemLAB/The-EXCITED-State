@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>生活杂记 on The EXCITED State</title>
+    <link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/</link>
+    <description>Recent content in 生活杂记 on The EXCITED State</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 03 Mar 2026 00:36:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>含时演化的歌</title>
+      <link>http://localhost:1313/posts/songs/</link>
+      <pubDate>Tue, 03 Mar 2026 00:36:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/songs/</guid>
+      <description>&lt;p&gt;　　生活快步向前，心境含时演化。&lt;/p&gt;
+&lt;p&gt;　　含时演化算符是量子力学中描述哈密顿量随时间变化的算符，这个算符好像也作用在我身上。发现自己总会在一段时间突然爱上一首歌，或是恰恰契合当时的心境，或是为旋律折服。每每听到这些歌时，与之串联的记忆会止不住地涌上心头。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
