@@ -97,6 +97,14 @@ url: "/links/"
     </div>
   </a>
 
+  <a class="friend-card" href="https://Lalalala-yeye.github.io/lalalalalalaal/" target="_blank">
+    <img class="friend-avatar" src="https://github.com/Lalalala-yeye.png" alt="Plankton">
+    <div class="friend-info">
+      <span class="friend-name">Lalalala-yeye's Blog</span>
+      <span class="friend-desc">YEYEYEYEYEYEYYEEY</span>
+    </div>
+  </a>  
+
 </div>
 
 <br>

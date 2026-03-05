@@ -6,8 +6,15 @@
     <description>Recent content in Posts on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Mar 2026 00:36:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 15:34:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>原子结构与原子光谱笔记更新</title>
+      <link>http://localhost:1313/posts/atomic-structure-and-spectroscopy/</link>
+      <pubDate>Tue, 03 Mar 2026 15:34:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/atomic-structure-and-spectroscopy/</guid>
+      <description>&lt;p&gt;　　我在笔记中更新了&lt;a href=&#34;https://pkchemlab.github.io/Notes/structure-spectroscopy/chapter-2/&#34;&gt;原子结构与原子光谱&lt;/a&gt;一节的内容。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>含时演化的歌</title>
       <link>http://localhost:1313/posts/songs/</link>
