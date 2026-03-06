@@ -6,8 +6,22 @@
     <description>Recent content in 最近更新 on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Mar 2026 15:34:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2026 01:39:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E6%9C%80%E8%BF%91%E6%9B%B4%E6%96%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>双原子分子振动光谱笔记更新</title>
+      <link>http://localhost:1313/posts/vibrational-spectrum/</link>
+      <pubDate>Sat, 07 Mar 2026 01:39:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/vibrational-spectrum/</guid>
+      <description>&lt;p&gt;　　我在笔记中更新了&lt;a href=&#34;https://pkchemlab.github.io/Notes/structure-spectroscopy/chapter-4/&#34;&gt;双原子分子振动光谱&lt;/a&gt;一节的内容。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>转动光谱笔记更新</title>
+      <link>http://localhost:1313/posts/rotational-spectrum/</link>
+      <pubDate>Fri, 06 Mar 2026 16:46:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/rotational-spectrum/</guid>
+      <description>&lt;p&gt;　　我在笔记中更新了&lt;a href=&#34;https://pkchemlab.github.io/Notes/structure-spectroscopy/chapter-3/&#34;&gt;转动光谱&lt;/a&gt;一节的内容。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>原子结构与原子光谱笔记更新</title>
       <link>http://localhost:1313/posts/atomic-structure-and-spectroscopy/</link>
