@@ -6,8 +6,16 @@
     <description>Recent content in Posts on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Mar 2026 01:39:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2026 16:39:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>无题</title>
+      <link>http://localhost:1313/posts/nothing/</link>
+      <pubDate>Sat, 14 Mar 2026 16:39:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/nothing/</guid>
+      <description>&lt;p&gt;　　每一个未来，都有人在。&lt;/p&gt;
+&lt;p&gt;　　别徘徊。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>双原子分子振动光谱笔记更新</title>
       <link>http://localhost:1313/posts/vibrational-spectrum/</link>
@@ -35,7 +43,7 @@
       <pubDate>Tue, 03 Mar 2026 00:36:00 +0800</pubDate>
       <guid>http://localhost:1313/posts/songs/</guid>
       <description>&lt;p&gt;　　生活快步向前，心境含时演化。&lt;/p&gt;
-&lt;p&gt;　　含时演化算符是量子力学中描述哈密顿量随时间变化的算符，这个算符好像也作用在我身上。发现自己总会在一段时间突然爱上一首歌，或是恰恰契合当时的心境，或是为旋律折服。每每听到这些歌时，与之串联的记忆会止不住地涌上心头。&lt;/p&gt;</description>
+&lt;p&gt;　　含时演化算符是量子力学中描述量子态随时间变化的算符，这个算符好像也作用在我身上。发现自己总会在一段时间突然爱上一首歌，或是恰恰契合当时的心境，或是为旋律折服。每每听到这些歌时，与之串联的记忆会止不住地涌上心头。&lt;/p&gt;</description>
     </item>
     <item>
       <title>科学是一场建模</title>
