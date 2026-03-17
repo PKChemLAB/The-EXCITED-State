@@ -35,6 +35,10 @@ url: "/links/"
     border-color: var(--primary); /* 边框变色 */
   }
 
+  /* 课题组卡片：两格宽度，无特殊样式 */
+  .friend-card.lab-card {
+    max-width: 620px;
+  }
 
 .friend-avatar {
   width: 64px;
@@ -69,12 +73,23 @@ url: "/links/"
   }
 </style>
 
+### 研习所在课题组
+
+<div class="friend-div">
+  <a class="friend-card lab-card" href="http://www.zhultrafast.org/" target="_blank">
+    <div class="friend-info">
+      <span class="friend-name">ZHUltrafast Lab</span>
+      <span class="friend-desc">高新光电功能材料与激发态超快光谱动力学</span>
+    </div>
+  </a>
+</div>
+
 ### 这里是 PKChemLAB 的朋友们
 
 <div class="friend-div">
   
   <a class="friend-card" href="https://plankton2005.best/" target="_blank">
-    <img class="friend-avatar" src="https://github.com/Mr2025x.png" alt="Plankton">
+    <img class="friend-avatar" src="https://github.com/Mr2025x.png" alt="痞老板">
     <div class="friend-info">
       <span class="friend-name">痞老板</span>
       <span class="friend-desc">Stay hungry, stay foolish.</span>
@@ -82,15 +97,15 @@ url: "/links/"
   </a>
 
   <a class="friend-card" href="https://misaka314159.github.io/" target="_blank">
-    <img class="friend-avatar" src="https://github.com/Misaka314159.png" alt="Plankton">
+    <img class="friend-avatar" src="https://github.com/Misaka314159.png" alt="Misaka's Blog">
     <div class="friend-info">
       <span class="friend-name">Misaka's Blog</span>
-      <span class="friend-desc">Beyond the sky, into the firmament.</span>
+      <span class="friend-desc">Beyond the sky, into the firmament.</span>
     </div>
   </a>
 
   <a class="friend-card" href=" https://evan0571.github.io/" target="_blank">
-    <img class="friend-avatar" src="https://github.com/Evan0571.png" alt="Plankton">
+    <img class="friend-avatar" src="https://github.com/Evan0571.png" alt="Evan's Blog">
     <div class="friend-info">
       <span class="friend-name">Evan's Blog</span>
       <span class="friend-desc">Knowing yourself is the beginning of all wisdom</span>
@@ -98,7 +113,7 @@ url: "/links/"
   </a>
 
   <a class="friend-card" href="https://Lalalala-yeye.github.io/lalalalalalaal/" target="_blank">
-    <img class="friend-avatar" src="https://github.com/Lalalala-yeye.png" alt="Plankton">
+    <img class="friend-avatar" src="https://github.com/Lalalala-yeye.png" alt="Lalalala-yeye's Blog">
     <div class="friend-info">
       <span class="friend-name">Lalalala-yeye's Blog</span>
       <span class="friend-desc">YEYEYEYEYEYEYYEEY</span>
