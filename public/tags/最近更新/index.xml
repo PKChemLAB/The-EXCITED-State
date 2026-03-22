@@ -6,8 +6,16 @@
     <description>Recent content in 最近更新 on The EXCITED State</description>
     <generator>Hugo -- 0.155.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Mar 2026 01:39:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 02:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/%E6%9C%80%E8%BF%91%E6%9B%B4%E6%96%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最近</title>
+      <link>http://localhost:1313/posts/lately-update/</link>
+      <pubDate>Mon, 23 Mar 2026 02:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/lately-update/</guid>
+      <description>&lt;p&gt;　　最近零碎地整理了一些内容，一直没顾上发 post，索性在这里做个小结。主页的笔记更新了关于&lt;a href=&#34;https://pkchemlab.github.io/Notes/papers/26.3.15/&#34;&gt;二维半导体钙钛矿的气液界面合成法&lt;/a&gt;的文献阅读，以及计算化学里的&lt;a href=&#34;https://pkchemlab.github.io/Notes/intro-computational-chem/montecarlo/&#34;&gt;蒙特卡洛方法&lt;/a&gt;、FDS 的&lt;a href=&#34;https://pkchemlab.github.io/Notes/data-structures/ds01/&#34;&gt;算法分析&lt;/a&gt;，还有信息理论中的&lt;a href=&#34;https://pkchemlab.github.io/Notes/information-theory/L1/&#34;&gt;信息度量与信息熵&lt;/a&gt;。还有些内容在路上，之后会跟着课程进度慢慢补齐。&lt;/p&gt;
+&lt;p&gt;　　开学不过三周，生活却已提前进入了整周无休的模式，甚至感觉比期末周还要兵荒马乱。各种琐事交织让人分身乏术，一眼望不到头。窗外明媚的春光也遥不可及，唯有匆匆路过求是大道时瞥见的樱花，或是北教路障旁点缀的郁金香，才能骗骗自己：我也算是在享受春天了。这段时间，心底的困境尚没能完全跨越，但终究是要向前看。压力固然大，好在心气并未完全磨灭，还愿意去学点新知、钻研些问题、做做科研。生活里的盼头，终归得靠自己给。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>双原子分子振动光谱笔记更新</title>
       <link>http://localhost:1313/posts/vibrational-spectrum/</link>
