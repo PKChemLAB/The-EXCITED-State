@@ -50,4 +50,3 @@ To clone and preview this blog on your local machine, follow these steps:
 ├── themes/PaperMod/    # PaperMod theme files
 └── hugo.toml           # Hugo configuration file
 ```
-```
