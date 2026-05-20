@@ -10,10 +10,11 @@
 <meta name="description" content="
 “虽然辛苦，我还是会选择那种滚烫的人生。” —— 北野武
 
-开辟此页，记录所见、所闻、所思。生活广阔，总该为自己留下些闪光的记忆。以此为契机，多一份督促，去做一些改变。人生不需要很多观众，我在我的舞台中心。">
+
+开辟此页，记录所见、所闻、所思。以此为契机，多一份督促与反思，去做一些改变。人生不需要很多观众，我在我的舞台中心。">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/status/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a00b24408c4f7dd2347ca11c843825c456796ef91dbc8fe66f3c595af9f37ad6.css" integrity="sha256-oAskQIxPfdI0fKEchDglxFZ5bvkdvI/mbzxZWvnzetY=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a2d092584f9c3b8db67bf152a48a09ead919860be85b35751320e0c8ceaca34c.css" integrity="sha256-otCSWE&#43;cO422e/FSpIoJ6tkZhgvoWzV1EyDgyM6so0w=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.png">
@@ -168,7 +169,9 @@
         <blockquote>
 <p><em>“虽然辛苦，我还是会选择那种滚烫的人生。” —— 北野武</em></p>
 </blockquote>
-<p>开辟此页，记录所见、所闻、所思。生活广阔，总该为自己留下些闪光的记忆。以此为契机，多一份督促，去做一些改变。人生不需要很多观众，我在我的舞台中心。</p>
+<blockquote>
+<p>开辟此页，记录所见、所闻、所思。以此为契机，多一份督促与反思，去做一些改变。人生不需要很多观众，我在我的舞台中心。</p>
+</blockquote>
 <hr>
 
     </div>
@@ -180,20 +183,114 @@
     
     
     
-    <div class="forum-floor" style="display: flex; flex-direction: column; padding: 16px 0; border-bottom: 1px solid var(--border); position: relative;">
+    
+    <div class="forum-floor" id="floor-1" style="display: flex; flex-direction: column; padding: 16px 0; border-bottom: 1px solid var(--border); position: relative;">
         
         <div class="floor-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 0.85rem; color: #888; font-family: monospace;">
-            <span class="floor-time">2026-05-20 14:38:15</span>
+            <span class="floor-time">2026-05-20 15:17:13</span>
             <span class="floor-number" style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; color: var(--primary);">#1</span>
         </div>
         
         <div class="floor-content" style="font-size: 0.98rem; line-height: 1.6; color: var(--content);">
-            <p>测试</p>
+            
+            <p>这是一楼啦啦啦</p>
 
         </div>
         
     </div>
     
+</div>
+
+<div class="journal-comments" style="max-width: 680px; margin: 0 auto; margin-top: 60px; padding-top: 30px; border-top: 2px dashed var(--border);">
+    <div class="comments">
+    <div id="giscus-container"></div>
+</div>
+
+<script>
+    
+    function getGiscusTheme() {
+        
+        const pageTheme = document.documentElement.getAttribute('data-theme');
+        console.log('[Giscus调试] 页面主题:', pageTheme);
+        
+        return pageTheme === 'dark' ? 'dark_dimmed' : 'light';
+    }
+
+    
+    function loadGiscus() {
+        const container = document.getElementById('giscus-container');
+        if (!container) return;
+
+        
+        const oldScript = container.querySelector('script[src*="giscus.app/client.js"]');
+        if (oldScript) oldScript.remove();
+
+        
+        const giscusConfig = {
+            src: "https://giscus.app/client.js",
+            "data-repo": "PKChemLAB/The-EXCITED-State",
+            "data-repo-id": "R_kgDORQVY6g",
+            "data-category": "Announcements",
+            "data-category-id": "DIC_kwDORQVY6s4C2caC",
+            "data-mapping": "pathname",
+            "data-strict": "0",
+            "data-reactions-enabled": "1",
+            "data-emit-metadata": "0",
+            "data-input-position": "bottom",
+            "data-theme": getGiscusTheme(),
+            "data-lang": "zh-CN",
+            crossorigin: "anonymous",
+            async: ""
+        };
+
+        
+        const giscusScript = document.createElement("script");
+        Object.entries(giscusConfig).forEach(([key, value]) => {
+            giscusScript.setAttribute(key, value);
+        });
+        container.appendChild(giscusScript);
+    }
+
+    
+    function syncGiscusTheme() {
+        const newTheme = getGiscusTheme();
+        const giscusIframe = document.querySelector('iframe.giscus-frame');
+        
+        if (giscusIframe) {
+            
+            giscusIframe.contentWindow.postMessage({
+                giscus: { setConfig: { theme: newTheme } }
+            }, 'https://giscus.app');
+            console.log('[Giscus调试] 已同步主题为:', newTheme);
+        }
+    }
+
+    
+    
+    const themeToggleBtn = document.querySelector('#theme-toggle');
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            
+            setTimeout(syncGiscusTheme, 200);
+        });
+    }
+
+    
+    const themeObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.attributeName === 'data-theme') {
+                syncGiscusTheme();
+            }
+        });
+    });
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme'] 
+    });
+
+    
+    document.addEventListener('DOMContentLoaded', loadGiscus);
+</script>
 </div>
 
     </main>
