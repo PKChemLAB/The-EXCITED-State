@@ -21,21 +21,25 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.155.3 # 建议写具体的版本号，或者用 latest
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
+      # 1. 直接使用官方动作挂载 Hugo 环境（内部自带极致的缓存加速，秒级完成）
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.155.3' # 保持你原本指定的 0.155.3 版本
+          extended: true          # 开启扩展版以支持编译高级 CSS 资产
+
+      # 2. 拉取你的博客源码
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      # 3. 编译静态页面（加上 --gc 参数自动清理过期缓存资产，提高效率）
       - name: Build with Hugo
-        run: hugo --minify
+        run: hugo --gc --minify
+
+      # 4. 上传打包文件
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
