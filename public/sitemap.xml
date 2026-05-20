@@ -2,14 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/claude/</loc>
+    <lastmod>2026-04-26T15:39:00+08:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-03-23T02:00:00+08:00</lastmod>
+    <lastmod>2026-04-26T15:39:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-03-23T02:00:00+08:00</lastmod>
+    <lastmod>2026-04-26T15:39:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-23T02:00:00+08:00</lastmod>
+    <lastmod>2026-04-26T15:39:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E9%9A%8F%E4%BE%BF%E6%8E%A2%E7%B4%A2/</loc>
+    <lastmod>2026-04-26T15:39:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/say-thank-you-to-ai/</loc>
+    <lastmod>2026-03-26T22:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E9%9A%8F%E6%80%9D%E9%9A%8F%E6%83%B3/</loc>
+    <lastmod>2026-03-26T22:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/lately-update/</loc>
     <lastmod>2026-03-23T02:00:00+08:00</lastmod>
@@ -21,9 +33,6 @@
     <lastmod>2026-03-23T02:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/nothing/</loc>
-    <lastmod>2026-03-14T16:39:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E9%9A%8F%E6%80%9D%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2026-03-14T16:39:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/vibrational-spectrum/</loc>
@@ -44,9 +53,6 @@
     <loc>http://localhost:1313/posts/what-did-hubble-see-on-your-birthday/</loc>
     <lastmod>2026-02-23T17:24:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/say-thank-you-to-ai/</loc>
-    <lastmod>2026-02-23T17:24:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/acee-%E5%91%BD%E9%A2%98/</loc>
     <lastmod>2026-02-18T17:00:00+08:00</lastmod>
   </url><url>
@@ -60,5 +66,7 @@
     <loc>http://localhost:1313/links/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/status/</loc>
   </url>
 </urlset>

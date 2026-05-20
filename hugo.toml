@@ -30,6 +30,7 @@ hasCJKLanguage = true
     comments = true
     showTagsInHome = true
     busuanzi = true
+    mainSections = ["posts"]
     
     # --- 个人简介模式 ---
     [params.profileMode]
@@ -92,3 +93,8 @@ hasCJKLanguage = true
         name = "Links"
         url = "/links"
         weight = 7
+
+    [[menu.main]]
+    name = "Journal"
+    url = "/status/"
+    weight = 8
