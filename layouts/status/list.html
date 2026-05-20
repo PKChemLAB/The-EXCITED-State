@@ -15,22 +15,23 @@
     {{- end }}
 </header>
 
-<div class="forum-timeline" style="max-width: 680px; margin: 0 auto; padding: 0 0 50px 0;">
-    {{/* 获取所有碎碎念页面，并按时间正序排列 */}}
-    {{$pages := (where .Site.RegularPages "Section" "status").ByDate }}
+<div class="forum-timeline" style="max-width: 680px; margin: 0 auto; padding: 10px 0 50px 0;">
+    {{/* 核心修改：获取所有页面并倒序排列，最新发表的在最上面 */}}
+    {{$pages := (where .Site.RegularPages "Section" "status").ByDate.Reverse }}
+    {{$total_floors := len $pages }}
     
-    {{/* 开始循环渲染每一层 */}}
     {{ range $index, $page := $pages }}
-    {{/* 1. 为每一层楼绑定 HTML ID，用于锚点平滑跳转 */}}
-    <div class="forum-floor" id="floor-{{ add $index 1 }}" style="display: flex; flex-direction: column; padding: 16px 0; border-bottom: 1px solid var(--border); position: relative;">
+    {{/* 计算真实的绝对楼层号：总数 - 当前索引 */}}
+    {{$floor_num := sub $total_floors $index }}
+    
+    <div class="forum-floor" id="floor-{{ $floor_num }}" style="display: flex; flex-direction: column; padding: 20px 16px; border-bottom: 1px solid var(--border); position: relative;">
         
-        <div class="floor-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 0.85rem; color: #888; font-family: monospace;">
+        <div class="floor-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 0.85rem; color: #888; font-family: monospace;">
             <span class="floor-time">{{ $page.Date.Format "2006-01-02 15:04:05" }}</span>
-            <span class="floor-number" style="background: var(--code-bg); padding: 2px 6px; border-radius: 4px; color: var(--primary);">#{{ add $index 1 }}</span>
+            <span class="floor-number">#{{ $floor_num }}</span>
         </div>
         
         <div class="floor-content" style="font-size: 0.98rem; line-height: 1.6; color: var(--content);">
-            {{/* 2. 使用兼容 Go 引擎的 \b 边界正则，将文本中的独立 #数字 转换为超链接 */}}
             {{ $page.Content | replaceRE `\b#(\d+)\b` `<a href="#floor-$1" class="floor-ref" style="color: #3b82f6; text-decoration: underline; font-weight: 500;">#$1</a>` | safeHTML }}
         </div>
         

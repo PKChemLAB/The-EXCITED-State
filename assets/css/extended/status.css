@@ -1,142 +1,60 @@
-/* 适配主题的字色与代码块 */
-.forum-floor .floor-content p {
-    margin: 0;
+/* 移除 PaperMod 默认列表页的边框、大阴影和背景，让其变成纯净的流式线 */
+body.list[class*="status"] .post-entry {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.forum-floor .floor-content code {
-    background: var(--code-bg);
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-size: 0.85rem;
-}
-
-/* 让点击楼层引用跳转时，拥有平滑滚动的动画效果 */
-html {
-    scroll-behavior: smooth;
-}
-
-/* 论坛楼层基础样式与动画 */
+/* 论坛楼层容器的精细美化 */
 .forum-floor {
-    transition: background-color 0.3s ease, padding-left 0.3s ease;
-}
-
-
-
-/* 当通过 #1 链接跳转触发现时，该楼层闪烁提示（高亮被引用的楼层） */
-.forum-floor:target {
-    animation: highlight-floor 2s ease-out;
-}
-
-@keyframes highlight-floor {
-    0% { background-color: rgba(59, 130, 246, 0.2); }
-    100% { background-color: transparent; }
-}
-
-/* 正文中的行内代码和链接美化 */
-.floor-content a {
-    color: #3b82f6;
-    word-break: break-all;
-}
-
-.dark .floor-content a {
-    color: #60a5fa;
-}
-
-/* 前言部分的特殊字体排版 */
-.page-content p {
-    margin-bottom: 12px;
-}
-
-/* 1. 论坛流整体的平滑滚动与间距优化 */
-html {
-    scroll-behavior: smooth;
-}
-
-.forum-timeline {
-    position: relative;
-    padding-top: 10px;
-}
-
-/* 2. 改造楼层卡片：去除生硬的边框，改用微弱的渐变与呼吸感 */
-.forum-floor {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 24px 16px !important;
-    margin: 8px 0;
     border-bottom: 1px solid var(--border) !important;
-    border-radius: 6px;
-    background: transparent;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
 }
 
-/* 鼠标悬停：向右微移，底色轻微变亮，增加微妙的阴影 */
+/* 鼠标悬停动效：底色微亮，轻微右移 */
 .forum-floor:hover {
     background-color: var(--code-bg) !important;
     padding-left: 24px !important;
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    padding-right: 8px !important;
+    border-radius: 6px;
 }
 
-.dark .forum-floor:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* 3. 楼层号 (#1) 样式升级 */
+/* 楼层号胶囊样式升级 */
 .forum-floor .floor-number {
     font-weight: 600;
     font-size: 0.8rem;
-    letter-spacing: 0.05em;
     background: var(--border) !important;
     color: var(--secondary) !important;
-    padding: 3px 8px !important;
-    border-radius: 12px !important; /* 胶囊形状 */
+    padding: 2px 8px !important;
+    border-radius: 12px !important;
     transition: all 0.2s ease;
 }
 
-/* 悬停楼层时，楼层号高亮变蓝 */
+/* 悬停整层楼时，楼层号高亮变蓝 */
 .forum-floor:hover .floor-number {
-    background: #011a44 !important;
+    background: #031e49 !important;
     color: #ffffff !important;
 }
 
 .dark .forum-floor:hover .floor-number {
-    background: #011a44 !important;
+    background: #031e49 !important;
     color: #1d212a !important;
 }
 
-/* 4. 精确时间戳美化：添加等宽字体并略微拉开字距 */
-.forum-floor .floor-time {
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    font-size: 0.85rem;
-    color: var(--secondary);
-    letter-spacing: 0.02em;
-    opacity: 0.8;
-}
-
-/* 5. 当点击引用链接 (#1) 跳转过来时，目标楼层的激活动画（淡入淡出高亮） */
+/* 楼层引用跳转时的淡入淡出激活动画 */
 .forum-floor:target {
     animation: floor-focus-glow 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes floor-focus-glow {
-    0% {
-        background-color: rgba(59, 130, 246, 0.15) !important;
-        padding-left: 24px !important;
-    }
-    30% {
-        background-color: rgba(59, 130, 246, 0.15) !important;
-    }
-    100% {
-        background-color: transparent !important;
-    }
+    0% { background-color: rgba(59, 130, 246, 0.15) !important; }
+    100% { background-color: transparent !important; }
 }
 
-/* 6. 规范楼层内的 Markdown 元素样式 */
-.floor-content {
-    margin-top: 4px;
-}
-
+/* 规范正文里的段落和代码块样式 */
 .floor-content p {
     margin: 0 0 8px 0;
 }
@@ -145,7 +63,6 @@ html {
     margin-bottom: 0;
 }
 
-/* 稍微凸显楼层内部的行内代码块 */
 .floor-content code {
     background: var(--code-bg);
     color: var(--primary);
