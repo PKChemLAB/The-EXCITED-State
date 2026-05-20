@@ -1,60 +1,11 @@
-/* 限制状态页面的整体宽度，使其更像单栏流 */
-.section-status .main {
-    max-width: 660px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* 隐藏大标题和卡片底部的多余元素 */
-.section-status .post-entry .entry-header h2,
-.section-status .post-entry .entry-footer {
-    display: none;
-}
-
-/* 重塑卡片：左侧带有一条蓝色时间线暗示 */
-.section-status .post-entry {
-    position: relative;
-    background: var(--entry);
-    border-left: 3px solid #3b82f6; 
-    border-radius: 6px;
-    padding: 16px 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-}
-
-.dark .section-status .post-entry {
-    border-left-color: #60a5fa;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.section-status .post-entry:hover {
-    transform: translateX(4px);
-    background: var(--theme);
-}
-
-/* 精确控制确切时间的显示样式 */
-.section-status .entry-meta {
-    display: block;
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; /* 选用等宽字体让时间更整齐 */
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #6b7280; /* 低调的灰色 */
-    margin-bottom: 10px; /* 与下方正文拉开距离 */
-    letter-spacing: 0.05em;
-}
-
-.dark .section-status .entry-meta {
-    color: #9ca3af;
-}
-
-/* 正文样式 */
-.section-status .entry-content {
-    font-size: 0.98rem;
-    line-height: 1.6;
-    color: var(--content);
-}
-
-.section-status .entry-content p {
+/* 适配主题的字色与代码块 */
+.forum-floor .floor-content p {
     margin: 0;
+}
+
+.forum-floor .floor-content code {
+    background: var(--code-bg);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 0.85rem;
 }
