@@ -9,3 +9,45 @@
     border-radius: 3px;
     font-size: 0.85rem;
 }
+
+/* 让点击楼层引用跳转时，拥有平滑滚动的动画效果 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 论坛楼层基础样式与动画 */
+.forum-floor {
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* 鼠标悬停在某一层楼时，微微向右凸显，并加深背景 */
+.forum-floor:hover {
+    background-color: var(--code-bg);
+    padding-left: 8px !important;
+    border-radius: 4px;
+}
+
+/* 当通过 #1 链接跳转触发现时，该楼层闪烁提示（高亮被引用的楼层） */
+.forum-floor:target {
+    animation: highlight-floor 2s ease-out;
+}
+
+@keyframes highlight-floor {
+    0% { background-color: rgba(59, 130, 246, 0.2); }
+    100% { background-color: transparent; }
+}
+
+/* 正文中的行内代码和链接美化 */
+.floor-content a {
+    color: #3b82f6;
+    word-break: break-all;
+}
+
+.dark .floor-content a {
+    color: #60a5fa;
+}
+
+/* 前言部分的特殊字体排版 */
+.page-content p {
+    margin-bottom: 12px;
+}
