@@ -94,7 +94,4 @@ hasCJKLanguage = true
         url = "/links"
         weight = 7
 
-    [[menu.main]]
-    name = "Journal"
-    url = "/status/"
-    weight = 8
+    
