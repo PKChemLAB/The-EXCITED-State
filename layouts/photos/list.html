@@ -7,17 +7,31 @@
   {{- end }}
 </header>
 
-<section class="photo-gallery" aria-label="照片集">
-  {{- range .Params.photos }}
-  <figure class="photo-card">
-    <a class="photo-link" href="{{ .src | safeURL }}" target="_blank" rel="noopener" aria-label="查看大图：{{ .title }}">
-      <img src="{{ .src | safeURL }}" alt="{{ .alt }}" loading="lazy" decoding="async">
-    </a>
-    <figcaption class="photo-caption">
-      <span class="photo-title">{{ .title }}</span>
-      {{- with .meta }}<span class="photo-meta">{{ . }}</span>{{ end }}
-    </figcaption>
-  </figure>
+<div class="photo-places">
+  {{- range .Params.places }}
+  {{- $placeID := printf "place-%s" (.subtitle | urlize) }}
+  <section class="photo-place{{ if eq (len .photos) 1 }} photo-place--single{{ end }}" aria-labelledby="{{ $placeID }}">
+    <header class="photo-place-header">
+      <div>
+        <h2 id="{{ $placeID }}">{{ .name }}</h2>
+        <span class="photo-place-subtitle">{{ .subtitle }}</span>
+      </div>
+      <span class="photo-place-count">{{ len .photos }} {{ if eq (len .photos) 1 }}photo{{ else }}photos{{ end }}</span>
+    </header>
+    <div class="photo-gallery">
+      {{- range .photos }}
+      <figure class="photo-card">
+        <a class="photo-link" href="{{ .src | safeURL }}" target="_blank" rel="noopener" aria-label="查看大图：{{ .title }}">
+          <img src="{{ .src | safeURL }}" alt="{{ .alt }}" loading="lazy" decoding="async">
+        </a>
+        <figcaption class="photo-caption">
+          <span class="photo-title">{{ .title }}</span>
+          {{- with .meta }}<span class="photo-meta">{{ . }}</span>{{ end }}
+        </figcaption>
+      </figure>
+      {{- end }}
+    </div>
+  </section>
   {{- end }}
-</section>
+</div>
 {{- end }}

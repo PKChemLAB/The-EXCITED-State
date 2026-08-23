@@ -290,10 +290,54 @@ body:has(.profile) .main {
     margin-bottom: 2rem;
 }
 
+.photo-places {
+    display: grid;
+    gap: clamp(2.8rem, 6vw, 4.8rem);
+}
+
+.photo-place-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.photo-place-header h2 {
+    margin: 0;
+    font-size: clamp(1.5rem, 3vw, 2.15rem);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.photo-place-subtitle,
+.photo-place-count {
+    color: var(--secondary);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.photo-place-subtitle {
+    display: block;
+    margin-top: 0.35rem;
+}
+
 .photo-gallery {
     display: block;
     columns: 2;
     column-gap: 1.2rem;
+}
+
+.photo-place--single .photo-gallery {
+    max-width: 36rem;
+    columns: 1;
+}
+
+.photo-place--single:nth-child(even) .photo-gallery {
+    margin-left: auto;
 }
 
 .photo-card {
@@ -404,6 +448,10 @@ body:has(.profile) .main {
 
     .photo-gallery {
         columns: 1;
+    }
+
+    .photo-place--single .photo-gallery {
+        max-width: none;
     }
 
     .photo-card {
