@@ -1,0 +1,23 @@
+{{- define "main" }}
+<header class="page-header photos-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <p class="post-description">{{ . }}</p>
+  {{- end }}
+</header>
+
+<section class="photo-gallery" aria-label="照片集">
+  {{- range .Params.photos }}
+  <figure class="photo-card">
+    <a class="photo-link" href="{{ .src | safeURL }}" target="_blank" rel="noopener" aria-label="查看大图：{{ .title }}">
+      <img src="{{ .src | safeURL }}" alt="{{ .alt }}" loading="lazy" decoding="async">
+    </a>
+    <figcaption class="photo-caption">
+      <span class="photo-title">{{ .title }}</span>
+      {{- with .meta }}<span class="photo-meta">{{ . }}</span>{{ end }}
+    </figcaption>
+  </figure>
+  {{- end }}
+</section>
+{{- end }}
